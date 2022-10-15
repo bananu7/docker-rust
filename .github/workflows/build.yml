@@ -28,4 +28,6 @@ jobs:
         with:
           context: ./
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/rust:latest, {{ secrets.DOCKERHUB_USERNAME }}/rust:1.64, ${{ secrets.DOCKERHUB_USERNAME }}/rust:git-${{ steps.vars.outputs.sha_short }}
+          tags:
+            - ${{ secrets.DOCKERHUB_USERNAME }}/rust:latest
+            - ${{ secrets.DOCKERHUB_USERNAME }}/rust:git-${{ steps.vars.outputs.sha_short }}
