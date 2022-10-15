@@ -7,7 +7,7 @@ RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 ENV PATH "$PATH:/root/.cargo/bin"
 
-RUN rustup install 1.42.0
+RUN rustup install 1.64.0
 RUN rustup update
 
 #ENV RUSTFMT_VERSION 0.3.1
